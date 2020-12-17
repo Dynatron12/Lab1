@@ -30,6 +30,9 @@ public class Main implements Nutriitious  {
             else if(parts[0].equals("IceCream")){
                 breakfast[counter] = new IceCream(parts[1]);
             }
+            else if(parts[0].equals("ChewingGum")){
+                breakfast[counter] = new ChewingGum(parts[1]);
+            }
 
             else if(parts[0].equals("-calories"))
                 System.out.println("Калории: " + Nutriitious.calculateCalories(breakfast));
