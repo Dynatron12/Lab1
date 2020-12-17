@@ -15,6 +15,10 @@ public class Main implements Nutriitious  {
             else if(parts[0].equals("Pie")) {
                 breakfast[counter] = new Pie(parts[1]);
             }
+            else if(parts[0].equals("Milk")){
+                breakfast[counter] = new Milk(parts[1]);
+            }
+
             else if(parts[0].equals("-calories"))
                 System.out.println("Калории: " + Nutriitious.calculateCalories(breakfast));
             counter++;
